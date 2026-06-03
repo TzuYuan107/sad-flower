@@ -1,0 +1,14 @@
+*.pyc
+*.txt
+*.png
+*.npy
+*config.yaml
+*.swp
+*.pkl
+*.mp4
+tensorboard_logs/
+normalizer_cache/
+*.pth
+gflower.egg-info/
+*.pt
+__pycache__/

@@ -1,0 +1,35 @@
+name: gflower
+channels:
+- nvidia
+- pytorch
+- defaults
+- conda-forge
+dependencies:
+- python=3.8
+- pip
+- patchelf
+- pytorch==1.13.0
+- pytorch-cuda=11.6
+- mkl==2023.1.0
+- pip:
+    - -f https://download.pytorch.org/whl/torch_stable.html
+    - numpy==1.22
+    - gym==0.23.1
+    - mujoco_py==2.1.2.14
+    - matplotlib==3.3.4
+    - git+https://github.com/Farama-Foundation/d4rl@f2a05c0d66722499bf8031b094d9af3aea7c372b#egg=d4rl
+    - minari[hf]
+    - gymnasium==1.0.0
+    - h5py==3.11.0
+    - einops==0.8.0
+    - scipy==1.10.1
+    - pot==0.9.5
+    - tensorboard
+    - tyro
+    - typed-argument-parser
+    - GitPython
+    - scikit-video
+    - qpth
+    - torchdiffeq
+    - cython==0.29.37
+    - protobuf==4.25.8
